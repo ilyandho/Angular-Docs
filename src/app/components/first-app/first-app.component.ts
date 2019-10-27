@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-app',
@@ -13,6 +13,14 @@ export class FirstAppComponent implements OnInit {
     {name:'fourth Product', description:'This is the fourth product here',price:'2800'},
     {name:'fifth Product', description:'This is the fifth product here',price:'800'}
   ]
+  
+  share(){
+    console.log('The product has been share')
+  }
+
+  onNotify(){
+    console.log('You will be notified when the product goes on sale')
+  }
   constructor() { }
 
   ngOnInit() {
