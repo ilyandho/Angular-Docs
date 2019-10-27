@@ -19,7 +19,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path:'h', component:FirstAppComponent},
+      {path:'', component:FirstAppComponent},
       {path:'products/:productId',component:ProductDetailsComponent}
     ])
   ],
